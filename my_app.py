@@ -117,7 +117,7 @@ st.markdown('###')
 if box == ' ':
     # image = Image.open(r'/Users/talaabdulsamad/Desktop/recovery.jpeg')
     # st.image(image)
-    video_file = open(r'/Users/talaabdulsamad/Desktop/videoplayback.mp4', 'rb')
+    video_file = open(r'videoplayback.mp4', 'rb')
     video_bytes = video_file.read()
     st.video(video_bytes)
 
