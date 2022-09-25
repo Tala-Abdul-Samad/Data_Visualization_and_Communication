@@ -19,7 +19,7 @@ font = "sans serif"
 textColor = '#FFFFFF'
 
 #Load COVID-19 DataData
-df = pd.read_csv("/Users/talaabdulsamad/Desktop/Fall 2022/MSBA 325/Assignments/Assignment 2/Data/covid_19_data.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
+df = pd.read_csv("covid_19_data.csv")  # read a CSV file inside the 'data" folder next to 'app.py'
 
 #Data Pre-processing
 #Rename columns 
@@ -68,7 +68,7 @@ map= px.choropleth(df, locations="Country/Region",locationmode = "country names"
              animation_frame="ObservationDate",color_continuous_scale=px.colors.sequential.Plasma, title= "COVID-19 Cases Over Time")
 
 # Data Science Salary
-df1=pd.read_csv(r'/Users/talaabdulsamad/Desktop/Fall 2022/MSBA 325/Assignments/Assignment 2/Data/datascience_salaries.csv').drop(columns = ['Unnamed: 0'])
+df1=pd.read_csv(r'datascience_salaries.csv').drop(columns = ['Unnamed: 0'])
 
 #Pre-processing Salary Data 
 df1['experience_level'] = df1['experience_level'].map({'EN':'Junior', 'MI':'Middle', 'SE':'Senior', 'EX':'Executive'})
